@@ -1,0 +1,111 @@
+.container__cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.contacto__title{
+    font-size: 55px;
+    color: #00343F;
+    text-align: center;
+    height: 100px;
+    margin-top: 40px;
+}
+.contacto__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.contacto__icons{
+    width: 60px;
+}
+.contacto__icons:hover{
+    transform: scale(1.2);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    filter: brightness(2.2);
+}
+.contacto__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto__tex{
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* REUTILIZADO */
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vh;
+    min-height: 70vh;
+}
+.formulario{
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 2rem;
+    border-radius: 20px 0 20px 0;
+    background: #00343f75;
+    backdrop-filter: blur(0.3rem);
+    font-size: 22px;
+}
+form input{
+    color: white;
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+    height: 2rem;
+    border-radius: 5px;
+    margin: 0 0 1rem 0;
+    background:  #04758b36;
+    padding: 2rem 1rem;
+    font-size: 20px;
+    outline: none;
+    transition: all 300ms;
+}
+form input:focus{
+    border: none;
+    box-shadow: 0 0px 5px #fff;
+}
+form button{
+    padding: 10px;
+    width: 30%;
+    font-size: 40px;
+    font-weight: 400;
+    background: #dbb6ee;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    transition: all .5s;
+}
+.submit_btn:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+form p{
+    text-align: center;
+    margin-top: 20px;
+}
+form .bx{
+    position: relative;
+    left: 45%;
+    top: -1rem;
+    color: white;
+}

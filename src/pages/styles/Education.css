@@ -1,0 +1,48 @@
+.container__educacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.educacion__title{
+    font-size: 55px;
+    color: #00343F;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.educacion__cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 70px;
+    row-gap: 40px;
+    width: 100%;
+}
+.educacion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f1c8f1;
+    box-shadow: 10px 5px 5px rgb(163, 162, 162);
+    width: 100%;
+    height: 250px;
+}
+.educacion__logo{
+    width: 45px;
+    position: relative;
+}
+.educacion__logo1{
+    width: 60px;
+}
+.educacion__name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #54024E;
+}
+.educacion__text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
