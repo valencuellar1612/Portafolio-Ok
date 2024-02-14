@@ -17,7 +17,7 @@ const Contact = () => {
     const sendEmail = data => {
         setActive(true)
         axios.defaults.headers.post['Content-Type'] = 'application/json';
-        axios.post('https://formsubmit.co/ajax/08d7ed3c94c2a530252e234fb83cd7f6', {
+        axios.post('https://formsubmit.co/ajax/valencuellar1612@gmail.com', {
             name: `Nuevo mensaje de ${data.name}`,
             message: `${data.name}, de la empresa ${data.company} desea ponerse en contacto contigo. L@ puedes contactar este correo ${data.email} o a su numero telefónico ${data.phone}.`
         })
