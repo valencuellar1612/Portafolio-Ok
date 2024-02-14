@@ -92,6 +92,9 @@ form button{
     border: none;
     transition: all .5s;
 }
+.submit_btn{
+    color: #00343F;
+}
 .submit_btn:hover{
     color: white;
     transform: scale(1.1);
