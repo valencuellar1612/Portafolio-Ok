@@ -109,7 +109,6 @@ const ProjectsPage = () => {
               </li>
             </ul>
           </div>
-          {/* GALLETA DE LA FORTUNA  */}
           <div className="container__proy">
             <li className="container__total">
               <span className="portafolio__name">Fortune cookie</span>

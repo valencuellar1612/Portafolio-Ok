@@ -1,6 +1,4 @@
-
 import './styles/HomePage.css'
-
 
 const HomePages = () => {
   return (
