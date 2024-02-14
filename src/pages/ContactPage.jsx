@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useState } from "react";
 import useIntersection from "./hook/useIntersection";
 import ContactOk from "./components/ContactOk";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   useIntersection
@@ -32,7 +33,7 @@ const Contact = () => {
                   })
             })
             .catch(error => {
-                console.error(error)
+                console.error(error),
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
@@ -62,17 +63,16 @@ const Contact = () => {
                         <input type="email" id='email' placeholder="Your e-mail"{...register('email')} required />
                     </div>
                     <div className="input_container">
-                        <label className="label" htmlFor="phone">Cellphone (please incluide code of your country): </label>
+                        <label className="label" htmlFor="phone">Cellphone: </label>
                         <input type="text" id='phone' placeholder="Example: +57123456789" {...register('phone')} required />
                     </div>
                     <div className="input_container">
-                        <label className="label" htmlFor="company">Company or institution: </label>
+                        <label className="label" htmlFor="company">Company: </label>
                         <input type="text" id='company' placeholder="Company, institution" {...register('company')} required />
                     </div>
                     <button className='submit_btn'>
                         Send
                     </button>
-                    <p>Thanks for your visit!</p>
                 </form>
             </div>
         </div>
